@@ -31,7 +31,7 @@ public:
     explicit InfoMusic(QString filePath, QObject *parent = nullptr);
     ~InfoMusic() = default;
     QPixmap getResouce() const;
-
+    QString CoveImage = "image://CodeImg/image.png"; // 最初的文件路径
 signals:
     void urlChanged(QUrl);
     //void iamgeChanged(QUrl &);
@@ -39,35 +39,25 @@ signals:
     void getInformation(const InfoMusicType data);
     //获得封面
     void getCoverImage(QPixmap resouce);
-    void errorResource(const QString &);
+    // void errorResource(const QString &);
 public slots:
     Q_INVOKABLE void setUrl(QString filePath);
-    Q_INVOKABLE QString getUrl()
-    {
-        if (isSuceess) {
-            return "image://imageProvider/1";
-        } else {
-            return "qrc:/picture/Face.png";
-        }
-    }
+
     void getMessage(); //  emit getInformation when success
 
 private:
-    QString url; // 最初的文件路径
-
     QPixmap resouce; // 封面信息
-    bool isSuceess = false;
+    QString url;
     inline std::string getResourceFromQrc(const QString &qrcFile)
     {
         QUrl dir{qrcFile};
         QDir assist;
         return assist.absoluteFilePath(dir.fileName()).toStdString();
     }
-    inline std::string getResourceFromFileSystem(const QUrl &url)
+    inline std::string getResourceFromFileSystem(const QString &url)
     {
         return url.toString().toStdString();
     }
-    inline std::string getResourceFromFileSystem(const QString &url) { return url.toStdString(); }
 };
 
 #endif // INFOMUSIC_H

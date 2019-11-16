@@ -146,15 +146,15 @@ int main(int argc, char *argv[])
     MusicMeata meata{};
     auto provider = meata.getProvider();
     auto infomusic = meata.getMusicData();
-    auto sd = infomusic->getResouce();
+    // auto sd = infomusic->getResouce();
 
     // 这里没有触发吗?
-    engine.addImageProvider(QLatin1String("imageProvider"), provider);
+    engine.addImageProvider(QLatin1String("CodeImg"), provider);
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     //设置当前的音乐解析对象
     engine.rootContext()->setContextProperty("provider", provider);
-
-    engine.rootContext()->setContextProperty("infomusic", infomusic);
+    engine.rootContext()->setContextProperty("CoveImage", infomusic->CoveImage);
+    //    engine.rootContext()->setContextProperty("infomusic", infomusic);
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreated,
@@ -166,6 +166,6 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
     engine.load(url);
     // CodeImage->setImage(QImage{QString{"qrc:/music/选区_006.png"}});
-
+    infomusic->getMessage(); // emit imageSource
     return app.exec();
 }

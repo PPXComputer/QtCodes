@@ -3,7 +3,6 @@
 
 #include "imageprovider.h"
 #include "infomusic.h"
-#include <QObject>
 class MusicMeata : public QObject
 {
     Q_OBJECT

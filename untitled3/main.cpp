@@ -6,7 +6,7 @@ int main()
 {
     int a = 10;
     int *address = &a;
-    auto refForAddress = std::ref(const_cast<int *const>(address));
+    auto refForAddress = std::ref((address));
     cout << "a的地址为" << address << "address指向的值" << *address << endl;
     cout << "a的ref为" << refForAddress << "ref指向的值为" << *refForAddress << endl;
 

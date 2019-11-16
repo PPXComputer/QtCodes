@@ -5,10 +5,17 @@ Window{
 
     width: 100
     height: 100
+    id:window
+    property string source: ""
+    onSourceChanged: {
+        console.log(window.source)
+        name.source=""
+        name.source=window.source
+    }
 
-    property url source: ""
     Image {
         id: name
-        source: "   "
+        cache: false
+        source: ""
     }
 }

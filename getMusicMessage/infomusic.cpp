@@ -2,12 +2,12 @@
 
 InfoMusic::InfoMusic(QString filePath, QObject *parent) : QObject(parent), url(filePath)
 {
-   
+    connect(this, &InfoMusic::urlChanged, this, [this] { this->getMessage(); });
 }
 
 void InfoMusic::getMessage()
 {
-    isSuceess = false;
+    this->CoveImage = "qrc:/picture/Face.png";
     std::string imagePath;
     if (url.startsWith("qrc") || url.startsWith(":")) {
         imagePath = this->getResourceFromQrc(url);
@@ -15,7 +15,7 @@ void InfoMusic::getMessage()
         if (QUrl{url}.isValid()) {
             imagePath = this->getResourceFromFileSystem(url);
         } else {
-            emit errorResource("非法路径");
+            qDebug() << "非法路径";
             return;
         }
     }
@@ -25,7 +25,6 @@ void InfoMusic::getMessage()
     qDebug() << "当前的资源为" << imagePath.c_str();
     if ((ret = avformat_open_input(&fmt_ctx, imagePath.c_str(), nullptr, nullptr))) {
         qDebug() << "Fail to open file";
-        emit errorResource("Fail to open file");
         return;
     } else {
         avformat_find_stream_info(fmt_ctx, nullptr);
@@ -37,10 +36,6 @@ void InfoMusic::getMessage()
             // qDebug() << "时长为:" << fmt_ctx->duration;
             maps.insert(tag->key, tag->value);
         }
-        //        for (auto &&sd : maps.keys()) {
-        //            qDebug() << "歌曲属性为" << sd << "值为" << maps[sd];
-        //        }
-
         if (fmt_ctx->iformat->read_header(fmt_ctx) < 0) {
             printf("No header format");
             return;
@@ -54,11 +49,10 @@ void InfoMusic::getMessage()
                 //                qDebug() << "是否为空" << img.isNull(); // 不为空 ... 我擦
                 if (!img.isNull()) {
                     this->resouce = QPixmap::fromImage(std::move(img)); // 获得图像
-                    qDebug() << "读取图片成功"
-                             << "图片为不为空" << this->resouce.isNull();
+                    qDebug() << "读取图片成功" << !this->resouce.isNull();
                     //  show->setImage(img); // 这里将调用 给qml使用
                     emit getCoverImage(this->resouce);
-                    isSuceess = true;
+                    // this->CoveImage = "image://imageProvider/1";
                 }
                 break;
             }
@@ -72,8 +66,6 @@ void InfoMusic::getMessage()
                                         maps.value("album"),
                                         time.toString("mm:ss"),
                                         QString::fromStdString(imagePath)});
-        // musicName author album duration filePath
-        // retur { "sd", "" }
     }
 }
 
