@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Create.js</file>
+        <file>Test.qml</file>
+        <file>TestImage.qml</file>
+        <file>D:/MyDownloads/picute/icon_0b9kqwgrs3g5/smile.png</file>
+    </qresource>
+</RCC>

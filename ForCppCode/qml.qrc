@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>DropItem.qml</file>
+        <file>CreateItem.js</file>
+        <file>image_test.qml</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Backward-Button.png</file>
+        <file>main.cpp</file>
+        <file>BasicDropItem.qml</file>
+        <file>ForCppCode.pro</file>
+        <file>m_classItem.qml</file>
+        <file>D:/MyDownloads/picute/icon_0b9kqwgrs3g5/fenlei.png</file>
+    </qresource>
+    <qresource prefix="/images"/>
+    <qresource lang="c++" prefix="/image"/>
+    <qresource prefix="/DropItem"/>
+</RCC>

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MusicModel.qml</file>
+        <file>DelegateModel.qml</file>
+    </qresource>
+    <qresource lang="c++" prefix="/ListModelPicture"/>
+</RCC>

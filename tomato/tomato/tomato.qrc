@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="/tomato">
+    <file>E:/360downloads/Marketing Icon Set/PNG/48x48/Setting.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/48x48/Browser.png</file>
+    <file alias="rest">Resources/201903070648091551955689126_small.gif</file>
+    <file alias="studying">Resources/201903070649051551955745492_small.gif</file>
+    <file alias="quit">Resources/exit_quit_24px_16971_easyicon.net.png</file>
+    <file alias="home">Resources/home_10px_31571_easyicon.net.ico</file>
+    <file alias="setting">Resources/Settings_10px_1070210_easyicon.net.ico</file>
+    <file alias="th">Resources/th.jpg</file>
+    <file>Resources/th (1).jpg</file>
+    <file>Resources/feizhuliuzhuomianbizhi_351225_9.jpg</file>
+    <file>Resources/dacaoyuan-001.jpg</file>
+    <file>Resources/appbar.navigate.next.png</file>
+    <file>Resources/appbar.navigate.next2.png</file>
+  </qresource>
+  <qresource prefix="/new/icon">
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Browser.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Calendar.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Chart.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Idea.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Mouse.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/News.png</file>
+    <file alias="setting">E:/360downloads/Marketing Icon Set/PNG/24x24/Pie Chart.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Screen.png</file>
+    <file alias="ppx">E:/360downloads/Marketing Icon Set/PNG/24x24/Search.png</file>
+    <file alias="opensetting">E:/360downloads/Marketing Icon Set/PNG/24x24/Setting.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Target.png</file>
+    <file>E:/360downloads/Marketing Icon Set/PNG/24x24/Time.png</file>
+    <file>Resources/th (1).jpg</file>
+    <file>Resources/18.jpg</file>
+    <file>Resources/appbar.3d.3ds.png</file>
+    <file>Resources/appbar.3d.collada.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>web_testClass</class>
+ <widget class="QWidget" name="web_testClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>web_test</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="forward">
+     <property name="text">
+      <string>forward</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="back">
+     <property name="text">
+      <string>back</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLineEdit" name="edit"/>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="enter">
+     <property name="text">
+      <string>进入</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QWebEngineView" name="View">
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="web_test.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>forward</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>View</receiver>
+   <slot>forward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>View</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enter</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>View</receiver>
+   <slot>reload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>810</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

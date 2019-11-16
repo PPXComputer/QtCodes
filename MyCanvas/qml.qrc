@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>DragItem.qml</file>
+        <file>dropAndCreate.js</file>
+        <file>CppItem.qml</file>
+        <file>D:/MyDownloads/picute/icon_0b9kqwgrs3g5/smile.png</file>
+        <file>TestForDrag.qml</file>
+    </qresource>
+</RCC>

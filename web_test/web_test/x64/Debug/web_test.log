@@ -1,0 +1,7 @@
+﻿  Rcc'ing web_test.qrc...
+  Moc'ing web_test.h...
+  moc_web_test.cpp
+  qrc_web_test.cpp
+  main.cpp
+  web_test.cpp
+  web_test.vcxproj -> F:\Csgo\QTcodes\web_test\x64\Debug\web_test.exe

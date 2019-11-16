@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>donutbreakdownchartClass</class>
+ <widget class="QWidget" name="donutbreakdownchartClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>donutbreakdownchart</string>
+  </property>
+  <widget class="QCharView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCharView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">qcharview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="donutbreakdownchart.qrc"/>
+ </resources>
+ <connections/>
+</ui>

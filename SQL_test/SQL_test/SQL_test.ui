@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>SQL_testClass</class>
+ <widget class="QWidget" name="SQL_testClass" >
+  <property name="objectName" >
+   <string notr="true">SQL_testClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>600</width>
+	<height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>SQL_test</string>
+  </property>
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="SQL_test.qrc"/>
+ </resources>
+ <connections/>
+</UI>

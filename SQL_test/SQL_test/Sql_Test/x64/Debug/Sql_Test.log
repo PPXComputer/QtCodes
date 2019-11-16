@@ -1,0 +1,8 @@
+﻿  Moc'ing Sql_Test.h...
+  moc_Sql_Test.cpp
+  Sql_Test.cpp
+  main.cpp
+  Header <QtSql/qsql.h> is deprecated. Please include <QtSql/qtsqlglobal.h> instead.
+  Header <QtSql/qsql.h> is deprecated. Please include <QtSql/qtsqlglobal.h> instead.
+  Header <QtSql/qsql.h> is deprecated. Please include <QtSql/qtsqlglobal.h> instead.
+  Sql_Test.vcxproj -> F:\Csgo\QTcodes\SQL_test\SQL_test\x64\Debug\Sql_Test.exe

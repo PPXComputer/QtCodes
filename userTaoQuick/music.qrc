@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/music">
+        <file>Thomas Greenberg - The Right Path_copy.mp3</file>
+        <file>松本文紀 - 空気力学少女と少年の詩 -Oegel Ver.-.mp3</file>
+        <file>平井真美子 - 孤灯.mp3</file>
+        <file>吴越 - Sweet Sunday.mp3</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>Iamges/arrow-left.png</file>
+    </qresource>
+</RCC>

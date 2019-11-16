@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/web_test">
+        <file>Resources/源1.cpp</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tomatoClass</class>
+ <widget class="QWidget" name="tomatoClass">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>117</width>
+    <height>70</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>tomato</string>
+  </property>
+  <property name="whatsThis">
+   <string>这是一个父窗口进行播放GIF</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="toolTip">
+      <string>这是一个动图(会变化的哦)</string>
+     </property>
+     <property name="Text" stdset="0">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="tomato.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>set_setting()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/tour">
+        <file>Iamges/arrow-left.png</file>
+    </qresource>
+</RCC>

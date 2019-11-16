@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/first">
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Add-Doc.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Attention-Doc.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Attention-Doc_1.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Backward-Button.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Bitcoin-Doc.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Dismiss-Doc.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Done-Doc.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Electric-Guitar.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Electric-Guitar_1.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Euro-Doc.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Forward-Button.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Hdmi.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Microphone-.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Mp-Doc.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Mute-Microphone.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Small-Jack.png</file>
+        <file alias="eva">D:/MyDownloads/picute/icon_2uh1hjsr0qm/Volume-.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Volume-Down.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Volume-Mute.png</file>
+        <file>D:/MyDownloads/picute/icon_2uh1hjsr0qm/Volume-Up.png</file>
+    </qresource>
+</RCC>

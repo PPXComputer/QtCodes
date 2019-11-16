@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">.QMainWidow{
+background-color: rgb(223, 223, 223);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMaximumSize</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0" rowspan="3" colspan="2">
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QWidget{
+background-color: rgb(167, 205, 255);
+
+}/*
+QPushButton{
+  border-bottom:3px solid black;
+	background:none;
+    background: transparent;
+selection-background-color:rgb(247, 184, 199);
+}
+
+QPushButton:checked{
+background-color: rgb(255, 255, 255);
+}*/
+QPushButton
+{ color: rgb(255, 255, 255);
+	background-color: rgb(167, 205, 255);
+	border:none;
+    padding: 3px;
+	font-family: &quot;Verdana&quot;;
+	font-size: 15px;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{background-color: rgb(85, 170, 255);
+	text-align: right;
+	padding-right: 20px;
+	font-weight:100
+}
+QPushButton:hover
+{
+	background-image:url(:/tomato/Resources/appbar.navigate.next2.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+	background-image:url(:/tomato/Resources/appbar.navigate.next.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>60</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>200</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget::QLabel{border-bottom:1px solid lightgray;}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="statusTip">
+             <string>返回首页</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	background:none;
+    background: transparent;
+	bored :none;
+}
+QPushButton:pressed
+{
+background-color: rgb(179, 179, 179);
+}
+
+</string>
+            </property>
+            <property name="icon">
+             <iconset resource="tomato.qrc">
+              <normaloff>:/tomato/E:/360downloads/Marketing Icon Set/PNG/48x48/Browser.png</normaloff>:/tomato/E:/360downloads/Marketing Icon Set/PNG/48x48/Browser.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="Text" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>40</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 13pt &quot;华文新魏&quot;;
+background:none;</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;皮皮虾软件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignJustify|Qt::AlignTop</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="statusTip">
+          <string>查看您的最近安排</string>
+         </property>
+         <property name="text">
+          <string>主页</string>
+         </property>
+         <property name="icon">
+          <iconset resource="tomato.qrc">
+           <normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Idea.png</normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Idea.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="statusTip">
+          <string>设置一个番茄周期的时间</string>
+         </property>
+         <property name="text">
+          <string>编辑</string>
+         </property>
+         <property name="icon">
+          <iconset resource="tomato.qrc">
+           <normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Chart.png</normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Chart.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="statusTip">
+          <string>这里是您的日程安排</string>
+         </property>
+         <property name="text">
+          <string>日程</string>
+         </property>
+         <property name="icon">
+          <iconset resource="tomato.qrc">
+           <normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Screen.png</normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Screen.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="statusTip">
+          <string>进入设置界面 可以更改界面和基本属性</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>设置</string>
+         </property>
+         <property name="icon">
+          <iconset resource="tomato.qrc">
+           <normaloff>:/tomato/E:/360downloads/Marketing Icon Set/PNG/48x48/Setting.png</normaloff>:/tomato/E:/360downloads/Marketing Icon Set/PNG/48x48/Setting.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QFrame" name="frame_3">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+
+	background-color: rgb(255, 255, 255);
+}
+QPushButton{
+border:none;
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="15,1,1,1">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">font: 75 11pt &quot;Agency FB&quot;;
+border:0px</string>
+         </property>
+         <property name="text">
+          <string>这是一个管理时间的软件 可以查看日程和统计使用</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="statusTip">
+          <string>打开缩略图部件进行专注周期</string>
+         </property>
+         <property name="whatsThis">
+          <string>缩略图</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="tomato.qrc">
+           <normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Time.png</normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Time.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="Text" stdset="0">
+          <string>缩略图</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="statusTip">
+          <string>最小化程序(可以设置在任务栏中显示)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="tomato.qrc">
+           <normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Mouse.png</normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Mouse.png</iconset>
+         </property>
+         <property name="Text" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="statusTip">
+          <string>关闭  自闭中----</string>
+         </property>
+         <property name="icon">
+          <iconset resource="tomato.qrc">
+           <normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Target.png</normaloff>:/new/icon/E:/360downloads/Marketing Icon Set/PNG/24x24/Target.png</iconset>
+         </property>
+         <property name="Text" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border:none;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="styleSheet">
+           <string notr="true">QScrollArea{border:0px}</string>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>797</width>
+             <height>642</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,7">
+            <item>
+             <widget class="QWidget" name="widgetbox" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1,1,1,0">
+               <property name="spacing">
+                <number>20</number>
+               </property>
+               <property name="topMargin">
+                <number>10</number>
+               </property>
+               <item>
+                <widget class="QComboBox" name="comboBox">
+                 <property name="frame">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="comboBox_2"/>
+               </item>
+               <item>
+                <widget class="QComboBox" name="comboBox_3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox">
+                 <property name="text">
+                  <string>抗锯齿</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                 <property name="Text" stdset="0">
+                  <string>反失真</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_2" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_7"/>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="linechart"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="myview" name="graphicsView">
+             <property name="statusTip">
+              <string>这里专注时间默认30分钟(25分钟专注和 5分钟休息</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QGraphicsView
+{
+border:0px
+	background-color: rgb(65, 109, 253);
+}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_add" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="add_item">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+	background:none;
+    background: transparent;
+	bored :none;
+}
+QPushButton:pressed
+{
+background-color: rgb(157, 157, 157);
+}
+QPushBuuton:hover
+{
+	background-color:white; color: black;
+}</string>
+             </property>
+             <property name="text">
+              <string>+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWidget">
+          <property name="statusTip">
+           <string>这是日程表</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>myview</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">myview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="tomato.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>863</x>
+     <y>37</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>925</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>891</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>920</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

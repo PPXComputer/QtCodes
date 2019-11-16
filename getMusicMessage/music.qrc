@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/music">
+        <file>Thomas Greenberg - The Right Path.mp3</file>
+        <file>Yulia - 여름날의 소풍.mp3</file>
+        <file>下载.jpeg</file>
+        <file>选区_006.png</file>
+        <file>Various Artists - Distant Shores.mp3</file>
+    </qresource>
+    <qresource prefix="/picture">
+        <file>Face.png</file>
+    </qresource>
+</RCC>

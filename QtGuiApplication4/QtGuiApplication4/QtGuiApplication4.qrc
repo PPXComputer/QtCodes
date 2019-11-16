@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QtGuiApplication4">
+        <file>QtGuiApplication4.ui</file>
+    </qresource>
+</RCC>

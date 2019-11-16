@@ -1,0 +1,11 @@
+﻿  Moc'ing main.cpp...
+  main.cpp
+main.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl WorkerThread::metaObject(void)const " (?metaObject@WorkerThread@@UEBAPEBUQMetaObject@@XZ)
+main.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl WorkerThread::qt_metacast(char const *)" (?qt_metacast@WorkerThread@@UEAAPEAXPEBD@Z)
+main.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl WorkerThread::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@WorkerThread@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+main.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl WorkerThread::resultReady(int)" (?resultReady@WorkerThread@@QEAAXH@Z)，该符号在函数 "public: __cdecl MainWindowsd::MainWindowsd(class QWidget *)" (??0MainWindowsd@@QEAA@PEAVQWidget@@@Z) 中被引用
+main.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl MainWindowsd::metaObject(void)const " (?metaObject@MainWindowsd@@UEBAPEBUQMetaObject@@XZ)
+main.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl MainWindowsd::qt_metacast(char const *)" (?qt_metacast@MainWindowsd@@UEAAPEAXPEBD@Z)
+main.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl MainWindowsd::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@MainWindowsd@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+main.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const WorkerThread::staticMetaObject" (?staticMetaObject@WorkerThread@@2UQMetaObject@@B)
+F:\Csgo\QTcodes\thread_test\x64\Debug\\thread_test.exe : fatal error LNK1120: 8 个无法解析的外部命令

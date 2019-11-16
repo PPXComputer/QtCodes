@@ -1,0 +1,8 @@
+yay	0	3
+this 	0	4
+is 	0	3
+my 	0	2
+first 	0	1
+cpp 	0	0
+program	0	21
+ibrrz	1	1
